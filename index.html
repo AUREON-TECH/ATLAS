@@ -1,51 +1,9 @@
 <!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080b12">
-  <meta name="description" content="ATLAS — inteligência de resultados e desempenho comercial.">
-  <title>ATLAS | Inteligência de Resultados</title>
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-</head>
-<body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <a class="brand" href="#"><span class="brand-mark">A</span><span>ATLAS<small>INTELIGÊNCIA DE RESULTADOS</small></span></a>
-      <div class="nav-label">VISÃO GERAL</div>
-      <button class="nav-item active" data-view="overview">▦ <span>Painel geral</span></button>
-      <button class="nav-item" data-view="performance">↗ <span>Desempenho</span></button>
-      <button class="nav-item" data-view="ranking">≡ <span>Rankings</span></button>
-      <button class="nav-item" data-view="history">◷ <span>Histórico</span></button>
-      <div class="sidebar-bottom"><span class="status-dot"></span> Ambiente ATLAS <small>Versão inicial</small></div>
-    </aside>
-    <main class="main">
-      <header class="topbar"><div><div class="eyebrow">CENTRAL DE INTELIGÊNCIA</div><h1 id="page-title">Painel geral</h1></div><button class="import-btn" id="import-trigger">＋ Importar planilha</button><input id="file-input" type="file" accept=".xlsx,.xls,.csv" hidden></header>
-      <section class="filters">
-        <label>Ano<select id="year-filter"><option value="all">Todos os anos</option></select></label>
-        <label>Mês<select id="month-filter"><option value="all">Todos os meses</option><option value="0">Janeiro</option><option value="1">Fevereiro</option><option value="2">Março</option><option value="3">Abril</option><option value="4">Maio</option><option value="5">Junho</option><option value="6">Julho</option><option value="7">Agosto</option><option value="8">Setembro</option><option value="9">Outubro</option><option value="10">Novembro</option><option value="11">Dezembro</option></select></label>
-        <label>Profissional<select id="person-filter"><option value="all">Todos</option></select></label>
-        <label>Equipe<select id="team-filter"><option value="all">Todas</option></select></label>
-        <button class="clear-btn" id="clear-filters">Limpar filtros</button>
-      </section>
-      <section class="welcome" id="welcome"><div><span class="eyebrow gold">SEU RESULTADO, EM PERSPECTIVA</span><h2>Transforme dados em<br><em>decisões melhores.</em></h2><p>Importe sua planilha para consolidar resultados, acompanhar metas e comparar a evolução da operação.</p></div><div class="welcome-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="atlas-glyph">A</div></div></section>
-      <section class="metrics">
-        <article class="metric-card"><span>VGV TOTAL</span><strong id="total-vgv">R$ 0</strong><small id="vgv-caption">Sem dados importados</small></article>
-        <article class="metric-card"><span>VENDAS</span><strong id="total-sales">0</strong><small>Quantidade no período</small></article>
-        <article class="metric-card"><span>CASAIS</span><strong id="total-couples">0</strong><small>Atendimentos registrados</small></article>
-        <article class="metric-card"><span>CONVERSÃO</span><strong id="conversion">0%</strong><small>Vendas ÷ casais</small></article>
-      </section>
-      <section class="content-grid">
-        <article class="panel chart-panel"><div class="panel-heading"><div><span class="eyebrow">EVOLUÇÃO</span><h3>Resultado por mês</h3></div><span class="panel-tag">VGV</span></div><div id="monthly-chart" class="chart-empty">Importe uma planilha para visualizar a evolução mensal.</div></article>
-        <article class="panel"><div class="panel-heading"><div><span class="eyebrow">DESTAQUES</span><h3>Top profissionais</h3></div><span class="panel-tag">VGV</span></div><div id="top-list" class="empty-list">Aguardando dados</div></article>
-      </section>
-      <section class="panel table-panel"><div class="panel-heading"><div><span class="eyebrow">BASE CONSOLIDADA</span><h3>Registros do período</h3></div><span id="record-count" class="panel-tag">0 registros</span></div><div class="table-wrap"><table><thead><tr><th>Data</th><th>Profissional</th><th>Equipe</th><th>Vendas</th><th>Casais</th><th>VGV</th></tr></thead><tbody id="data-table"><tr><td colspan="6" class="table-empty">Nenhum dado importado. Envie um arquivo Excel ou CSV para começar.</td></tr></tbody></table></div></section>
-      <footer>ATLAS <span>•</span> Inteligência de resultados <span>•</span> Seus dados permanecem no navegador nesta versão.</footer>
-    </main>
-  </div>
-  <div id="toast" role="status" aria-live="polite"></div>
-  <script src="./app.js"></script>
-</body>
-</html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080b12"><meta name="description" content="ATLAS — painel anual de inteligência comercial."><title>ATLAS | Resultados 2026</title><link rel="manifest" href="./manifest.webmanifest"><link rel="stylesheet" href="./styles.css"></head>
+<body><div class="app-shell"><aside class="sidebar"><a class="brand" href="#"><span class="brand-mark">A</span><span>ATLAS<small>INTELIGÊNCIA DE RESULTADOS</small></span></a><div class="nav-label">RESULTADOS 2026</div><button class="nav-item active" data-view="overview">▦ <span>Visão anual</span></button><button class="nav-item" data-view="promotores">↗ <span>Captação</span></button><button class="nav-item" data-view="liners">◎ <span>Liners</span></button><button class="nav-item" data-view="closers">◆ <span>Closers</span></button><button class="nav-item" data-view="locais">⌖ <span>Locais</span></button><button class="nav-item" data-view="brindes">◇ <span>Brindes</span></button><div class="sidebar-bottom"><span class="status-dot"></span> Dados consolidados<small>Base importada em 19/11/2026</small></div></aside>
+<main class="main"><header class="topbar"><div><div class="eyebrow">AUREON SAAS · CENTRAL DE INTELIGÊNCIA</div><h1 id="page-title">Visão anual 2026</h1><div class="period" id="period">01/01/2026 a 18/11/2026</div></div><span class="source-pill">BASE REAL · 2026</span></header>
+<section class="metrics"><article class="metric-card"><span>VGV REGISTRADO</span><strong id="vgv">—</strong><small>Valor vendido no controle de sala</small></article><article class="metric-card"><span>VENDAS</span><strong id="sales">—</strong><small>Atendimentos com valor vendido maior que zero</small></article><article class="metric-card"><span>ATENDIMENTOS ENCERRADOS</span><strong id="couples">—</strong><small>Registros com status Encerrado</small></article><article class="metric-card"><span>CONVERSÃO</span><strong id="conversion">—</strong><small>Vendas ÷ atendimentos encerrados</small></article></section>
+<section class="content-grid"><article class="panel"><div class="panel-heading"><div><span class="eyebrow">PERFIL DA OPERAÇÃO</span><h3>Qualificação dos atendimentos</h3></div><span class="panel-tag">Q / NQ</span></div><div class="qual-wrap" id="qualification"></div></article><article class="panel"><div class="panel-heading"><div><span class="eyebrow">CANAL DE CAPTAÇÃO</span><h3>Maior contribuição de VGV</h3></div><span class="panel-tag">TOP LOCAL</span></div><div id="top-local" class="highlight"></div></article></section>
+<section class="panel ranking-panel"><div class="panel-heading"><div><span class="eyebrow" id="section-eyebrow">DESEMPENHO COMERCIAL</span><h3 id="section-title">Ranking de captação</h3></div><span class="panel-tag" id="ranking-count">15 destaques</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Profissional / indicador</th><th>Atendimentos</th><th>Vendas</th><th>VGV</th><th>Conversão</th></tr></thead><tbody id="ranking-body"></tbody></table></div></section>
+<section class="panel gifts-panel" id="gift-summary"><div class="panel-heading"><div><span class="eyebrow">CONTROLE DE CUSTOS</span><h3>Brindes válidos no período</h3></div><span class="panel-tag">01 JAN — 18 NOV</span></div><div class="gift-metrics"><div><small>VALOR VÁLIDO</small><strong id="gift-value">—</strong></div><div><small>UNIDADES VÁLIDAS</small><strong id="gift-units">—</strong></div><div><small>BAIXADOS</small><strong id="gift-down">—</strong></div><div><small>ESTORNADOS</small><strong id="gift-reversed">—</strong></div></div><div id="gift-list" class="gift-list"></div><p class="note">O histórico de brindes possui datas de cadastro e cobre 01/01 a 18/11/2026. Valores válidos, baixados e estornados são apresentados separadamente.</p></section>
+<section class="note-panel"><strong>Nota de integridade dos dados</strong><p>O arquivo Controle de sala foi emitido em 19/11/2026 e não contém data do atendimento. Por isso, os indicadores de VGV, vendas, atendimentos e rankings são consolidados da base disponível, sem distribuição mensal. Foram considerados apenas registros com status “Encerrado”; a linha de total do rodapé foi excluída. O VGV é a soma de “Valor vendido” desses registros.</p><p>O arquivo de brindes contém histórico datado de 01/01/2026 a 18/11/2026. O valor válido não representa necessariamente custo liquidado; o painel preserva os status originais do relatório.</p></section><footer>ATLAS <span>•</span> AUREON SAAS <span>•</span> Inteligência de resultados</footer></main></div><div id="toast" role="status" aria-live="polite"></div><script src="./app.js"></script></body></html>
