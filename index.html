@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="ATLAS — inteligência de resultados e desempenho comercial.">
+  <title>ATLAS | Inteligência de Resultados</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">A</span><span>ATLAS<small>INTELIGÊNCIA DE RESULTADOS</small></span></a>
+      <div class="nav-label">VISÃO GERAL</div>
+      <button class="nav-item active" data-view="overview">▦ <span>Painel geral</span></button>
+      <button class="nav-item" data-view="performance">↗ <span>Desempenho</span></button>
+      <button class="nav-item" data-view="ranking">≡ <span>Rankings</span></button>
+      <button class="nav-item" data-view="history">◷ <span>Histórico</span></button>
+      <div class="sidebar-bottom"><span class="status-dot"></span> Ambiente ATLAS <small>Versão inicial</small></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><div class="eyebrow">CENTRAL DE INTELIGÊNCIA</div><h1 id="page-title">Painel geral</h1></div><button class="import-btn" id="import-trigger">＋ Importar planilha</button><input id="file-input" type="file" accept=".xlsx,.xls,.csv" hidden></header>
+      <section class="filters">
+        <label>Ano<select id="year-filter"><option value="all">Todos os anos</option></select></label>
+        <label>Mês<select id="month-filter"><option value="all">Todos os meses</option><option value="0">Janeiro</option><option value="1">Fevereiro</option><option value="2">Março</option><option value="3">Abril</option><option value="4">Maio</option><option value="5">Junho</option><option value="6">Julho</option><option value="7">Agosto</option><option value="8">Setembro</option><option value="9">Outubro</option><option value="10">Novembro</option><option value="11">Dezembro</option></select></label>
+        <label>Profissional<select id="person-filter"><option value="all">Todos</option></select></label>
+        <label>Equipe<select id="team-filter"><option value="all">Todas</option></select></label>
+        <button class="clear-btn" id="clear-filters">Limpar filtros</button>
+      </section>
+      <section class="welcome" id="welcome"><div><span class="eyebrow gold">SEU RESULTADO, EM PERSPECTIVA</span><h2>Transforme dados em<br><em>decisões melhores.</em></h2><p>Importe sua planilha para consolidar resultados, acompanhar metas e comparar a evolução da operação.</p></div><div class="welcome-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="atlas-glyph">A</div></div></section>
+      <section class="metrics">
+        <article class="metric-card"><span>VGV TOTAL</span><strong id="total-vgv">R$ 0</strong><small id="vgv-caption">Sem dados importados</small></article>
+        <article class="metric-card"><span>VENDAS</span><strong id="total-sales">0</strong><small>Quantidade no período</small></article>
+        <article class="metric-card"><span>CASAIS</span><strong id="total-couples">0</strong><small>Atendimentos registrados</small></article>
+        <article class="metric-card"><span>CONVERSÃO</span><strong id="conversion">0%</strong><small>Vendas ÷ casais</small></article>
+      </section>
+      <section class="content-grid">
+        <article class="panel chart-panel"><div class="panel-heading"><div><span class="eyebrow">EVOLUÇÃO</span><h3>Resultado por mês</h3></div><span class="panel-tag">VGV</span></div><div id="monthly-chart" class="chart-empty">Importe uma planilha para visualizar a evolução mensal.</div></article>
+        <article class="panel"><div class="panel-heading"><div><span class="eyebrow">DESTAQUES</span><h3>Top profissionais</h3></div><span class="panel-tag">VGV</span></div><div id="top-list" class="empty-list">Aguardando dados</div></article>
+      </section>
+      <section class="panel table-panel"><div class="panel-heading"><div><span class="eyebrow">BASE CONSOLIDADA</span><h3>Registros do período</h3></div><span id="record-count" class="panel-tag">0 registros</span></div><div class="table-wrap"><table><thead><tr><th>Data</th><th>Profissional</th><th>Equipe</th><th>Vendas</th><th>Casais</th><th>VGV</th></tr></thead><tbody id="data-table"><tr><td colspan="6" class="table-empty">Nenhum dado importado. Envie um arquivo Excel ou CSV para começar.</td></tr></tbody></table></div></section>
+      <footer>ATLAS <span>•</span> Inteligência de resultados <span>•</span> Seus dados permanecem no navegador nesta versão.</footer>
+    </main>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
